@@ -1,5 +1,5 @@
 import Phaser from 'phaser'
-
+import GameOverScene from './GameOverScene';
 import OutlineWarriorScene from './OutlineWarriorScene'
 
 const config = {
@@ -19,7 +19,7 @@ const config = {
 		},
 	},
 
-	scene: [OutlineWarriorScene],
+	scene: [OutlineWarriorScene, GameOverScene],
 }
 
 export default new Phaser.Game(config)
